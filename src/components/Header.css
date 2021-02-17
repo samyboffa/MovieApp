@@ -1,0 +1,8 @@
+#head {
+    color: red;
+    text-align: center;
+    background-color: #0b0b0b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
