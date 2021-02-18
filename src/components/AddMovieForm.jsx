@@ -6,9 +6,6 @@ export const AddMovieForm = (props) => {
     const changerAffichage = () => {
         affichage == "none" ? setAffichage("block") : setAffichage("none");
     };
-    let newMovie = {};
-
-    const [newM, setNewM] = useState({ hello: "hello" });
 
     return (
         <div id="form">
@@ -21,20 +18,12 @@ export const AddMovieForm = (props) => {
                 onSubmit={(e) => {
                     e.preventDefault();
                     changerAffichage();
-
-                    /*newMovie.title = e.target.titre.value;
+                    let newMovie = {};
+                    newMovie.title = e.target.titre.value;
                     newMovie.posterUrl = e.target.url.value;
                     newMovie.description = e.target.description.value;
-                    newMovie.rate = e.target.rating.value;*/
-                    setNewM({
-                        title: e.target.titre.value,
-                        posterUrl: e.target.url.value,
-                        description: e.target.description.value,
-                        rate: e.target.rating.value,
-                    });
-                    props.addNewMovie(newM);
-                    console.log(newM);
-                    console.log(newMovie);
+                    newMovie.rate = e.target.rating.value;
+                    props.addNewMovie(newMovie);
                 }}
             >
                 <label> Film Title : </label>
@@ -46,7 +35,6 @@ export const AddMovieForm = (props) => {
                 <label> Film Rating : </label>
                 <input type="number" min="1" max="5" name="rating" required />
                 <input type="submit" value="Valider" />
-                {console.log(newM)};
             </form>
         </div>
     );

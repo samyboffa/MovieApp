@@ -1,0 +1,12 @@
+.filled {
+    fill: rgb(233, 210, 84);
+}
+.filled:hover {
+    cursor: pointer;
+}
+.notFilled {
+    fill: rgb(58, 58, 58);
+}
+.notFilled:hover {
+    cursor: pointer;
+}

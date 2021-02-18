@@ -1,0 +1,42 @@
+.filterBox {
+    width: 85%;
+    margin: auto;
+    background-color: rgb(104, 104, 104);
+    color: rgb(236, 223, 223);
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.totalStars {
+    display: flex;
+}
+.filterBtn {
+    width: 70px;
+    background-color: rgb(30, 32, 32);
+    color: whitesmoke;
+    border: none;
+    height: 27px;
+}
+
+.star:hover {
+    fill: rgb(231, 221, 151);
+
+    cursor: pointer;
+}
+#c1 {
+    fill: rgb(228, 205, 61);
+}
+#c2 {
+    fill: rgb(228, 205, 61);
+}
+#c3 {
+    fill: rgb(228, 205, 61);
+}
+#c4 {
+    fill: rgb(228, 205, 61);
+}
+#c5 {
+    fill: rgb(228, 205, 61);
+}

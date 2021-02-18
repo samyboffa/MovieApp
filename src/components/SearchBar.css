@@ -1,17 +1,14 @@
 #search {
     background-color: rgb(204, 202, 202);
     border: none;
-    width: 98%;
+    width: 85%;
+    align-self: center;
+    margin-bottom: 2%;
     height: 35px;
-    margin: 1%;
     text-align: center;
     font-size: 1.5em;
     background-image: url(https://img.icons8.com/color/48/000000/search--v1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 1%;
-}
-#totalSearch {
-    width: 85%;
-    margin: auto;
 }
