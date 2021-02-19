@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { MovieList } from "./components/MovieList";
@@ -10,8 +10,6 @@ import castAwayPhoto from "./components/images/castAway.jpg";
 import shawshankRedemption from "./components/images/shawshank.jpg";
 import maskPhoto from "./components/images/mask.jpg";
 import savingPhoto from "./components/images/savingPrivateRyan.jpg";
-import { AddMovieForm } from "./components/AddMovieForm";
-import { SearchBar } from "./components/SearchBar";
 import { Filter } from "./components/Filter";
 
 function App() {
@@ -451,7 +449,7 @@ function App() {
     ];
     const [movie, setMovie] = useState(movieList);
     const addMovie = (newMovie) => {
-        setMovie([...movie, newMovie]);
+        setMovie([newMovie, ...movie]);
     };
 
     const searchMovie = (input) => {
@@ -473,10 +471,12 @@ function App() {
 
     return (
         <div id="total">
-            <Header />
-            <SearchBar searchMethod={searchMovie} />
+            <Header searchMethod={searchMovie} addNewMovie={addMovie} />
+            <h1 className="sousTitre" style={{ marginTop: "8%" }}>
+                {" "}
+                MOVIES{" "}
+            </h1>
             <Filter filter={filterByRate} />
-            <AddMovieForm addNewMovie={addMovie} />
             <MovieList movieList={movie} />
         </div>
     );

@@ -3,13 +3,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-between;
+    margin-top: 2%;
+    gap: 5px;
 }
 .noFound {
-    color: blanchedalmond;
+    color: #ff6516;
     width: 50%;
     margin: auto;
-    border: 2px solid whitesmoke;
+    border: 2px solid #ff6516;
     vertical-align: middle;
     height: 100px;
     padding: auto;
+    margin-top: 5%;
 }

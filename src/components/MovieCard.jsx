@@ -14,12 +14,12 @@ export const MovieCard = ({ movie }) => {
 
     return (
         <div id="card">
-            <h3>{movie.title}</h3> <img src={movie.posterUrl} alt=""></img>
-            <h4>{movie.description}</h4>
+            <img src={movie.posterUrl} alt=""></img>
+            <h3>{movie.title}</h3>
             <p className="stars">
                 {tab}
                 {tab2}{" "}
-            </p>
+            </p>{" "}
         </div>
     );
 };

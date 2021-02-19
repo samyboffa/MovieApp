@@ -1,12 +1,7 @@
 .filled {
-    fill: rgb(233, 210, 84);
+    fill: #ff6516;
 }
-.filled:hover {
-    cursor: pointer;
-}
+
 .notFilled {
-    fill: rgb(58, 58, 58);
-}
-.notFilled:hover {
-    cursor: pointer;
+    fill: #232323;
 }

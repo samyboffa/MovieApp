@@ -1,8 +1,140 @@
 #head {
     color: rgb(196, 196, 196);
     text-align: center;
-    background-color: #0b0b0b;
+    background-color: #000000;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2%;
+    height: 80px;
+    gap: 5%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 1px 1px 5px burlywood;
+    opacity: 0.95;
+}
+#firstC {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 5%;
+}
+.logo {
+    height: 50px;
+    width: 150px;
+}
+
+h3 {
+    text-align: center;
+    height: fit-content;
+}
+h3:hover {
+    color: #ff6516;
+    cursor: pointer;
+}
+input {
+    background: none;
+    border: 0.5px brown;
+    height: min-content;
+    color: #ff6516;
+    text-align: center;
+    font-size: 1.2em;
+}
+input::placeholder {
+    color: #ff6516;
+    opacity: 0.4;
+}
+.loop {
+    fill: #b6b6b6;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+input {
+    color: #ff6516;
+}
+.loop:hover {
+    fill: #ff6516;
+}
+.searchField {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.loopp {
+    margin-top: 20px;
+}
+.all {
+    background-color: #141414;
+    width: 100%;
+    height: 5000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: middle;
+    gap: 2%;
+}
+.all input {
+    width: 70%;
+    height: 120px;
+    margin-top: 5%;
+    font-size: 5em;
+    border-bottom: 2px solid blanchedalmond;
+    text-align: left;
+    position: relative;
+    left: 5px;
+}
+.all input::placeholder {
+    color: #888888;
+    opacity: 1;
+}
+.ok {
+    fill: #888888;
+}
+.ok:hover {
+    fill: #ff6516;
+    opacity: 0.9;
+}
+.quit {
+    fill: #888888;
+}
+.quit:hover {
+    fill: #4e0202;
+    opacity: 0.9;
+}
+.svg {
+    width: 120px;
+    height: 120px;
+    margin-top: 5%;
+}
+.svg:hover {
+    cursor: pointer;
+}
+.addNew {
+    position: relative;
+    align-self: flex-start;
+    margin-top: 2%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    opacity: 1;
+    width: 100%;
+    gap: 5px;
+    padding-bottom: 5%;
+    border-radius: 5px;
+}
+form input {
+    border: 1px solid #ff6516;
+    border-radius: 3px;
+    width: 90%;
+    margin: auto;
 }

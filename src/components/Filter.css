@@ -1,42 +1,64 @@
 .filterBox {
-    width: 85%;
+    width: 95%;
     margin: auto;
-    background-color: rgb(104, 104, 104);
+    background-color: #151515;
     color: rgb(236, 223, 223);
-    height: 35px;
+    height: 60px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    border-bottom: 1px solid #087a8c;
+    border-top: 1px solid #087a8c;
+    gap: 5%;
 }
 .totalStars {
     display: flex;
 }
-.filterBtn {
-    width: 70px;
-    background-color: rgb(30, 32, 32);
-    color: whitesmoke;
-    border: none;
-    height: 27px;
+
+.ff {
+    margin-left: 25px;
+    font-weight: lighter;
 }
-
+.filterBtn {
+    width: 100px;
+    background: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    height: 27px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+}
+.filterBtn:hover {
+    color: whitesmoke;
+    border: 1px solid #ff6516;
+    background-color: #ff6516;
+    cursor: pointer;
+}
+.filterBtn:active {
+    border: none;
+}
+.ss {
+    fill: #232323;
+}
 .star:hover {
-    fill: rgb(231, 221, 151);
-
+    fill: #ff6516;
     cursor: pointer;
 }
 #c1 {
-    fill: rgb(228, 205, 61);
+    fill: #ff6516;
 }
 #c2 {
-    fill: rgb(228, 205, 61);
+    fill: #ff6516;
 }
 #c3 {
-    fill: rgb(228, 205, 61);
+    fill: #ff6516;
 }
 #c4 {
-    fill: rgb(228, 205, 61);
+    fill: #ff6516;
 }
 #c5 {
-    fill: rgb(228, 205, 61);
+    fill: #ff6516;
 }

@@ -1,22 +1,37 @@
 img {
-    width: 270px;
-    height: 400px;
-    border-radius: 2%;
+    width: 320px;
+    height: 180px;
 }
 #card {
     width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
-    background-color: rgb(24, 24, 24);
+    background-color: #151515;
     color: cornsilk;
-    border-radius: 10px;
-    padding: 1%;
-    margin: 1% auto;
+    height: 240px;
+}
+#card * {
+    font-weight: lighter;
 }
 #card:hover {
-    box-shadow: 2px 2px 10px cornsilk;
+    box-shadow: 1px 1px 10px #727272;
+    color: #ff6516;
 }
 
 .stars {
     display: flex;
     justify-content: center;
+    margin: 1px;
+}
+.name {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    margin: 1px;
+    letter-spacing: 0.08em;
 }

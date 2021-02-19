@@ -1,6 +1,22 @@
+@font-face {
+    font-family: "open_sansregular";
+    src: url("./components/fonts/OpenSans-Regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "open_sansregular";
+}
+
 body {
-    background-color: #141414;
+    background-color: #232323;
 }
 #total {
     text-align: center;
+}
+.sousTitre {
+    color: blanchedalmond;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 3%;
 }
