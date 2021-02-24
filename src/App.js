@@ -1,45 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, forceUpdate } from "react";
 import "./App.css";
-import movieList from "./components/AllMovies.jsx";
-import { Header } from "./components/Header";
 import { MovieList } from "./components/MovieList";
-
-import { Filter } from "./components/Filter";
-
+import tvShowsList from "./components/AllSeries";
+import movieLists from "./components/AllMovies";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./components/Home";
+import { ItemDetail } from "./components/ItemDetail";
+let x = 0;
 function App() {
-    //Add new Movie
-    const [movie, setMovie] = useState(movieList);
-    const addMovie = (newMovie) => {
-        setMovie([newMovie, ...movie]);
-    };
-    //Search Movie By name
-    const searchMovie = (input) => {
-        setMovie(
-            movieList.filter((element) => {
-                return element.title
-                    .toLocaleUpperCase()
-                    .includes(input.toLocaleUpperCase());
-            })
-        );
-    }; //Filter Movie By Rating
-    const filterByRate = (input) => {
-        setMovie(
-            movie.filter((element) => {
-                return element.rate >= input;
-            })
-        );
-    };
-
     return (
-        <div id="total">
-            <Header searchMethod={searchMovie} addNewMovie={addMovie} />
-            <h1 className="sousTitre" style={{ marginTop: "8%" }}>
-                {" "}
-                MOVIES{" "}
-            </h1>
-            <Filter filter={filterByRate} />
-            <MovieList movieList={movie} />
-        </div>
+        <Router>
+            <div id="total">
+                <Switch>
+                    <Route path="/" exact>
+                        <Home styleLoop="hidden" />
+                    </Route>
+                    <Route
+                        exact
+                        path="/movies"
+                        render={({ match }) => (
+                            <MovieList
+                                tvShowOrMovies="MOVIES"
+                                tvShowOrMovie="ADD NEW MOVIE"
+                                dataList={movieLists}
+                                match={match}
+                            />
+                        )}
+                    />
+                    <Route
+                        exact
+                        path="/tvShows"
+                        render={({ match }) => (
+                            <MovieList
+                                tvShowOrMovies="TVSHOWS"
+                                tvShowOrMovie="ADD NEW TV SHOW"
+                                dataList={tvShowsList}
+                                match={match}
+                            />
+                        )}
+                    />
+                    <Route
+                        path="/movies/:id"
+                        render={({ match }) => (
+                            <ItemDetail movieOrTv="movies" match={match} />
+                        )}
+                    />
+                    <Route
+                        path="/tvShows/:id"
+                        render={({ match }) => (
+                            <ItemDetail movieOrTv="tvshows" match={match} />
+                        )}
+                    />
+                </Switch>
+            </div>
+        </Router>
     );
 }
 

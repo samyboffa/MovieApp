@@ -69,9 +69,9 @@ input {
     margin-top: 20px;
 }
 .all {
-    background-color: #141414;
+    background-color: #000000;
     width: 100%;
-    height: 5000px;
+    height: 700px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -83,19 +83,45 @@ input {
     gap: 2%;
     z-index: 2;
 }
-.all input {
-    width: 70%;
+.searching {
+    width: 80%;
     height: 120px;
-    margin-top: 5%;
-    font-size: 5em;
-    border-bottom: 2px solid blanchedalmond;
-    text-align: left;
+    margin-top: 1%;
+    font-weight: lighter;
+    border-bottom: 1px solid hsla(36, 100%, 90%, 0.3);
     position: relative;
     left: 5px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
-.all input::placeholder {
-    color: #888888;
+.inputSearch {
+    margin-top: 5%;
+    font-size: 2.3em;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: 100;
+}
+.inputSearch::placeholder {
+    color: rgb(255, 255, 255, 0.6);
     opacity: 1;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.quitok {
+    display: flex;
+    margin-top: 5.5%;
+    gap: 50px;
+}
+.inputSearch:focus {
+    outline: none;
+}
+.links {
+    text-decoration: none;
+    color: bisque;
 }
 .ok {
     fill: #888888;
@@ -112,9 +138,9 @@ input {
     opacity: 0.9;
 }
 .svg {
-    width: 120px;
-    height: 120px;
-    margin-top: 5%;
+    width: 25px;
+    height: 25px;
+    display: block;
 }
 .svg:hover {
     cursor: pointer;

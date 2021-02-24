@@ -15,6 +15,9 @@
 .totalStars {
     display: flex;
 }
+#search {
+    display: flex;
+}
 
 .ff {
     margin-left: 25px;

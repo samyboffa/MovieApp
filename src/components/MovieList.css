@@ -6,6 +6,9 @@
     margin-top: 2%;
     row-gap: 15px;
 }
+#totalList {
+    margin-top: 10%;
+}
 .noFound {
     color: #ff6516;
     width: 50%;
@@ -15,4 +18,10 @@
     height: 100px;
     padding: auto;
     margin-top: 5%;
+}
+.sousTitre {
+    color: blanchedalmond;
+    font-weight: lighter;
+    text-align: left;
+    margin-left: 3%;
 }

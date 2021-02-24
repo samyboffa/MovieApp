@@ -1,4 +1,4 @@
-let movieList = [
+let movieLists = [
     {
         id: "447332",
         title: "A Quiet Place",
@@ -1008,6 +1008,8 @@ let movieList = [
     },
 ];
 
-movieList.map((e) => (e.rate = Math.floor(Math.random() * (6 - 1) + 1)));
-console.log(movieList);
-export default movieList;
+movieLists.map((e) => (e.rate = Math.floor(Math.random() * (6 - 1) + 1)));
+movieLists.map(
+    (e) => (e.year = Math.floor(Math.random() * (2020 - 2000) + 2000))
+);
+export default movieLists;

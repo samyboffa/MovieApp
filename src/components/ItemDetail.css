@@ -1,0 +1,47 @@
+.movieItem {
+    margin-top: 9%;
+    display: flex;
+    gap: 5%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: start;
+    padding: 1%;
+    align-items: center;
+}
+.title {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+}
+.side * {
+    text-align: left;
+    color: blanchedalmond;
+    font-weight: lighter;
+}
+.poster img {
+    width: 300px;
+    height: 400px;
+}
+.year {
+    color: rgb(126, 125, 124);
+    font-size: 0.8em;
+}
+.overviewTextItem {
+    font-size: 0.8em;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+}
+.overviewTitle {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.back {
+    fill: rgb(216, 216, 216);
+    width: 50px;
+    height: 50px;
+}
+.back:hover {
+    fill: #ff6516;
+    cursor: pointer;
+}

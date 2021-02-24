@@ -4,7 +4,6 @@ import { Star } from "./Star";
 
 export const MovieCard = ({ movie }) => {
     let tab = [];
-    let x = Math.floor(Math.random() * (6 - 1) + 1);
     for (let i = 0; i < movie.rate; i++) {
         tab.push(<Star key={i} hello="filled" />);
     }
@@ -14,11 +13,15 @@ export const MovieCard = ({ movie }) => {
     }
 
     const [visibility, setVisibility] = useState("hidden");
+    const changeVisibility = () =>
+        visibility === "hidden"
+            ? setVisibility("visible")
+            : setVisibility("hidden");
     return (
         <div
             id="card"
-            onMouseLeave={() => setVisibility("hidden")}
-            onMouseEnter={() => setVisibility("visible")}
+            onMouseEnter={() => changeVisibility()}
+            onMouseLeave={() => changeVisibility()}
         >
             <img src={movie.poster} alt=""></img>
             <h3>{movie.title}</h3>

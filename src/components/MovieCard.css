@@ -19,6 +19,7 @@ img {
 #card:hover {
     box-shadow: 1px 1px 10px #727272;
     color: #ff6516;
+    transition: width 2s, height 4s;
 }
 
 .stars {

@@ -1,0 +1,56 @@
+.totalCarousel {
+    margin-top: 6.5%;
+    color: azure;
+    max-height: 200px;
+}
+
+.carItem {
+    width: 80%;
+    height: 25%;
+}
+.btnBack {
+    position: relative;
+    right: 40%;
+    top: -100px;
+}
+.btnNex {
+    position: relative;
+    left: 40%;
+    top: -100px;
+}
+.carItem {
+    height: 100%;
+    box-shadow: 2px 2px 100px 10px rgb(116, 116, 116);
+}
+.btnn {
+    background: none;
+    border: none;
+}
+.slides {
+    position: relative;
+}
+.btnn:focus {
+    outline: none;
+}
+footer {
+    margin-top: 16%;
+    color: thistle;
+}
+.iconLinks *:hover {
+    cursor: pointer;
+    fill: #ff6516;
+}
+.iconLinks {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.mail {
+    font-size: 0.8em;
+    margin: 1%;
+}
+.createdBy {
+    margin: 0.6%;
+}
