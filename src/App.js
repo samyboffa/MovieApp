@@ -1,4 +1,4 @@
-import React, { useState, useEffect, forceUpdate } from "react";
+import React from "react";
 import "./App.css";
 import { MovieList } from "./components/MovieList";
 import tvShowsList from "./components/AllSeries";
@@ -6,7 +6,6 @@ import movieLists from "./components/AllMovies";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { ItemDetail } from "./components/ItemDetail";
-let x = 0;
 function App() {
     return (
         <Router>

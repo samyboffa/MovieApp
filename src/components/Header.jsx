@@ -1,4 +1,4 @@
-import React, { useState, forceUpdate } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "./images/logo.png";
@@ -53,6 +53,7 @@ export const Header = (props) => {
                         onSubmit={(e) => {
                             e.preventDefault();
                             let newMovie = {};
+                            newMovie.id = Math.floor(Math.random() * 2000);
                             newMovie.title = e.target.titre.value;
                             newMovie.poster = e.target.url.value;
                             newMovie.description = e.target.description.value;

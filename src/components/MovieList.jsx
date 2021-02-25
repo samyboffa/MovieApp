@@ -51,6 +51,7 @@ export const MovieList = ({
                 {movie.length ? (
                     movie.map((movie, index) => (
                         <Link
+                            key={index}
                             style={{ textDecoration: "none" }}
                             to={`/${tvShowOrMovies}/${movie.id}`}
                         >
